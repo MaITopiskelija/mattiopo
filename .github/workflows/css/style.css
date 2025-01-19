@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --tausta: #f3f3f5;
+    --teksti: #08252b;
+    --teksti-b: #031718;
+    --bg-dark: rgb(130, 153, 109);
+    --bg-middle:#636da7;
+    --bg-kriteerit: #201414;
+    --higlight: #2c94bd;
+    --menucolorhover:#fffffc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* vertikaalinen keskitys */
+.v-center {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+/* horisontaalinen oikea tasaus */
+.h-right {
+    position: absolute;
+    right: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--tausta);
+    color: var(--teksti)
+}
+
+
+/* Header osion tyyliasetukset */
+header {
+    background-color:  var(--tausta);
+    color: var(--teksti-b);
+    padding: 1px;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: var(--bg-middle) solid 3px;
+}
+
+header.logo {
+    float: left;
+    padding: 20px; 
+    font-size: 1.3em;
+}
+
+header span {
+    font-size: 1.3em;
+}
+
+header nav {
+    float: right;
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+header nav a {
+    color: var(--teksti);
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 25px 0.5em; 
+    border-radius: 16px; 
+}
+
+header nav a:hover {
+    color: var(--menucolorhover);
+    background-color: var(--higlight);
+}
+
+/* main osion tyyliasetukset */
+main {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    padding-top: 130px;
+}
+
+/* section osion tyyliasetukset */
+section {
+    max-width: 900px;
+    width: 65%;
+    margin: 20px auto;
+}
+
+/* työtehtävät osion tyyliasetukset */
+.tyotehtavat a{
+    display: block;    
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--bg-middle);
+    color: var(--tausta);
+    border: 1px solid var(--teksti);
+    padding: 20px;
+    margin: 10px 0; 
+    border-radius: 10px; 
+}
+
+.tyotehtavat a:hover{
+    color: var(--teksti);
+    background-color: var(--higlight);
+
+}
+
+/* kriteerit osion tyyliasetukset */
+.tyokriteerit a{
+    display: block;    
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--bg-kriteerit);
+    color: var(--tausta);
+    border: 1px solid var(--teksti);
+    padding: 20px;
+    margin: 10px 0; 
+    border-radius: 10px; 
+}
+
+.tyokriteerit a:hover{
+    color: var(--teksti);
+    background-color: var(--menucolorhover);
+
+}
+
+
+/* tutkinnon rakenne -osion tyyliasetukset */
+
+.tutintro {
+    list-style-type:none;  
+}
+
+.tutmuodostuminen {
+    padding: 0; 
+}
+
+.tutmuodostuminen > li{
+    list-style-type:square;
+    margin-left:70px;
+    padding: 5px;
+}
+
+
+/* tutkinnon-osat tyylejä */
+.tutkinto-osat {
+    padding: 3px 20px; 
+}
+
+
+/*arviointi-sivun tyylejä */
+.arviointi {
+    padding: 0; 
+}
+
+
+.arviointi li {
+    list-style-type: none;
+}
+
+/* footer-osion tyyliasetukset */
+footer {
+    background-color: var(--bg-middle);
+    color: var(--tausta);
+    padding: 40px 0; 
+    text-align: center;
+    font-size: 1.3em;
+}
